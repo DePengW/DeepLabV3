@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="eb7890dd-db28-4576-9cc4-c49804abe08e" name="Deeplabv3" url="http://122.51.119.77">
+        <fileTransfer host="122.51.119.77" port="18422" rootFolder="/home/wangdepeng/jlwd/DeepLabv3.pytorch" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="18422" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
