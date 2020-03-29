@@ -1,5 +1,3 @@
 # DeepLabV3
-基于Pytorch的DeepLabV3复现
-This is a PyTorch implementation of DeepLabv3 that aims to reuse the resnet implementation in torchvision as much as possible. This means we use the PyTorch model checkpoint when finetuning from ImageNet, instead of the one provided in TensorFlow.
-
-We try to match every detail in DeepLabv3, except that Multi-Grid other than (1, 1, 1) is not yet supported. On PASCAL VOC 2012 validation set, using the same hyperparameters, we reproduce the performance reported in the paper (GPU with 16GB memory is required). We also support the combination of Group Normalization + Weight Standardization:
+此代码是基于Pytorch的Deeplabv3复现，除了论文中的Multi-Grid的（1,2,4）改为了（1,1,1），其余尽量还原了论文中的设置。在VOC2012的val上，使用相同的超参数情况下，复现出与论文相当的结果。另外，我们加入了 Group Normalization（GN） + Weight Standardization（WS）的实验结果：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200329210435426.png)
